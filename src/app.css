@@ -1,0 +1,23 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  height: 100vh;
+}
+
+.box {
+  height: 100vh;
+}
+
+.boxing {
+  position: relative;
+  height: 500px;
+  width: 500px;
+  background-color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

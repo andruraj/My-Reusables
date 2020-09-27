@@ -1,0 +1,25 @@
+.popupWrapper {
+  position: relative;
+  display: block;
+}
+
+.popup {
+  position: absolute;
+  padding: 10px;
+  border-radius: 2px;
+  overflow: hidden;
+  box-sizing: border-box;
+  border: 1px solid #000000;
+  z-index: 10;
+}
+
+.popupWrapper .pointer {
+  content: " ";
+  position: absolute;
+  top: 30%;
+  left: 96%;
+  margin-left: -5px;
+  border-width: 7px;
+  border-style: solid;
+  border-color: transparent black transparent transparent;
+}
