@@ -1,0 +1,24 @@
+import { useRef } from "react";
+import PropTypes from "prop-types";
+
+/**
+ * Custom hook to get the previous value of a state or prop.
+ * @param {any} value - The current value.
+ * @returns {any} - The previous value.
+ */
+export const usePrevious = (value) => {
+  const currentRef = useRef(value);
+  const previousRef = useRef();
+
+  if (currentRef.current !== value) {
+    previousRef.current = currentRef.current;
+    currentRef.current = value;
+  }
+
+  return previousRef.current;
+};
+
+// PropTypes
+usePrevious.propTypes = {
+  value: PropTypes.any.isRequired,
+};
